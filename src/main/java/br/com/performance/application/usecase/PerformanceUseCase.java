@@ -11,7 +11,7 @@ import java.util.LinkedList;
 public class PerformanceUseCase implements PerformanceInboundPort {
 
     @Override
-    public Performance testArray() {
+    public Performance insertNumberInMiddleOfArray() {
         var initialTime = System.nanoTime();
 
         int[] array = new int[10_000_000];
@@ -37,7 +37,7 @@ public class PerformanceUseCase implements PerformanceInboundPort {
     }
 
     @Override
-    public Performance testArrayList() {
+    public Performance insertNumberInMiddleOfArrayList() {
         var initialTime = System.nanoTime();
 
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -57,7 +57,7 @@ public class PerformanceUseCase implements PerformanceInboundPort {
     }
 
     @Override
-    public Performance testLinkedList() {
+    public Performance insertNumberInMiddleOfLinkedList() {
         var initialTime = System.nanoTime();
 
         LinkedList<Integer> linkedList = new LinkedList<>();

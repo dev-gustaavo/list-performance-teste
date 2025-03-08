@@ -4,9 +4,9 @@ import br.com.performance.core.domain.Performance;
 
 public interface PerformanceInboundPort {
 
-    Performance testArray();
+    Performance insertNumberInMiddleOfArray();
 
-    Performance testArrayList();
+    Performance insertNumberInMiddleOfArrayList();
 
-    Performance testLinkedList();
+    Performance insertNumberInMiddleOfLinkedList();
 }

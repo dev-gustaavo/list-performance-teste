@@ -20,21 +20,21 @@ public class PerformanceController {
     }
 
     @GetMapping("/array")
-    public ResponseEntity<Performance> testArray() {
-        var performance = performanceInboundPort.testArray();
+    public ResponseEntity<Performance> insertNumberInMiddleOfArray() {
+        var performance = performanceInboundPort.insertNumberInMiddleOfArray();
 
         return ResponseEntity.ok(performance);
     }
 
     @GetMapping("/arrayList")
-    public ResponseEntity<Performance> testArrayList() {
-        var performance = performanceInboundPort.testArrayList();
+    public ResponseEntity<Performance> insertNumberInMiddleOfArrayList() {
+        var performance = performanceInboundPort.insertNumberInMiddleOfArrayList();
         return ResponseEntity.ok(performance);
     }
 
     @GetMapping("/linkedList")
-    public ResponseEntity<Performance> testLinkedList() {
-        var performance = performanceInboundPort.testLinkedList();
+    public ResponseEntity<Performance> insertNumberInMiddleOfLinkedList() {
+        var performance = performanceInboundPort.insertNumberInMiddleOfLinkedList();
         return ResponseEntity.ok(performance);
     }
 }
